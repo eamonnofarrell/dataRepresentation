@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Eamonn O Farrell 30/09/2019 -->
+<!-- Exercise 1.1 XML file that stores data for library -->
+<library>
+
+  <book category="Technical Books">
+    <title lang="en">Python Ptogramming</title>
+    <author>Harry Wilson</author>
+    <ISBN>1234567</ISBN>
+    
+	<title lang="en">Modern Networks</title>
+    <author>John Small</author>
+    <ISBN>2345678</ISBN>
+    
+  </book>
+
+  <book category="Cookery Books">
+    <title lang="en">Perfect Potatoes</title>
+    <author>Nevin Maguire</author>
+    <ISBN>3456789</ISBN>
+   
+	<title lang="en">The 10 Minute Meal</title>
+    <author>Mary Austin</author>
+    <ISBN>4567899</ISBN>
+    
+  </book>
+
+</library>
+
