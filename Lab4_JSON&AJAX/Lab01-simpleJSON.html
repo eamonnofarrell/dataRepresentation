@@ -1,0 +1,28 @@
+<html>
+
+    <head>
+
+        <title>Simple JSON</title> 
+
+    </head>
+
+    <body>
+		<h2>Convert a string written in JSON format, into a JavaScript object.</h2>
+    <p id="ISBN"></p>
+	<p id="AUTHOR"></p>
+	<p id="TITLE"></p>
+    </body>
+
+    <script>
+
+        
+		var myJSON = '{"isbn": 1234567, "Author": "Andrew Beatty","Title" : "the emptness of ping-pong balls"}';
+		var myObj = JSON.parse(myJSON);
+		document.getElementById("ISBN").innerHTML = myObj.isbn;
+		document.getElementById("AUTHOR").innerHTML = myObj.Author;
+		document.getElementById("TITLE").innerHTML = myObj.Title;
+		console.log(myObj.Author);  <!--Display name of author in console-->
+           
+</script>  
+
+</html>
