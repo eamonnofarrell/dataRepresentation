@@ -11,11 +11,14 @@
 	 </head>     
 	 <body>  
 		 
-		<button onclick="readJSON()">Get Rate!</button> 
+		<button onclick="readJSON()">Get Coindesk Rates!</button> 
+		<button onclick="readJSON2()">Get Cryptocompare USD Rate!</button> 
 		
 		<p id="output"><p>	
 		<p id="output1"><p>	
 		<p id="output2"><p>	
+		
+		<p id="outputUSD"><p>
 		
 			
 	 </body>     
@@ -47,6 +50,29 @@
 					}             
 			}); 
  
-        }     
+        } 
+
+		function readJSON2(){  
+			$.ajax({  
+				"url": "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,USD,EUR ",    
+				"method":"GET",
+				"data":"", 
+				"dataType": "JSON",  
+				"success":function(result){                     
+					console.log(result); 
+					var rateUSD = result.USD
+					console.log(rateUSD);
+					document.getElementById("outputUSD").innerText = "Cryptocompare USD = " + rateUSD;	
+					
+					
+				},                
+				"error":function(xhr,status,error){
+					console.log("error: "+status+" msg:"+error);  
+											
+					}             
+			}); 
+ 
+        } 
+		
 	</script> 
 </html> 
