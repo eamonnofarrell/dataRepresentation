@@ -1,0 +1,22 @@
+{
+    "cars": [
+        {
+            "make": "Opel",
+            "model": "Zafira",
+            "price": 18000,
+            "reg": "181 G 1234"
+        },
+        {
+            "make": "Nissan",
+            "model": "Almera",
+            "price": 8000,
+            "reg": "11 MO 1234"
+        },
+        {
+            "make": "Opel",
+            "model": "Zafira",
+            "price": 12000,
+            "reg": "12-Mo-54321"
+        }
+    ]
+}
